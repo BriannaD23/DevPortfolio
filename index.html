@@ -143,13 +143,16 @@
 			</section>
 
 			<script>
-				$(document).ready(function() {
-					let options = {
-						strings: ["hope", "family"],
-						typeSpeed: 40
-					};
-				let typed = new Typed(".auto-type", options);
+				document.addEventListener('DOMContentLoaded', function() {
+				console.log('Typed.js initialization script executed');
+				const typed = new Typed('.auto-type', {
+					strings: ['Creative', 'UX-UI Designer'],
+					typeSpeed: 150,
+					backSpeed: 150,
+					backDelay: 2000,
+					loop: true
 				});
+			});
 
 
 			</script>
@@ -158,10 +161,11 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
-			<script type="module"src="assets/js/typed.js"></script>
+			
 	</body>
 </html>
