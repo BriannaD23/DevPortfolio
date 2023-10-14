@@ -2585,9 +2585,7 @@ input, select, textarea {
 	ul.major-icons {
 		list-style: none;
 		padding-left: 0;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
+		text-align: center;
 		margin: auto 0;
 	
 	}
@@ -2595,26 +2593,27 @@ input, select, textarea {
 
 		ul.major-icons li {
 			padding: 2rem;
-			text-align: center;
-			background: linear-gradient(135deg, #303D36);
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+			display: inline-block;
+			background: white;
+			box-shadow:0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 24px rgba(0, 0, 0, 0.4);
 			margin: 10px;
+			border-radius: 10px;
 		}
 
 
 			ul.major-icons li .skills-icon {
-			
 				border-radius: 4px;
 				display: inline-block;
 				height: 5em;
 				line-height: 8em;
-				margin: 0;
 				text-align: center;
-				width: 5em;
-				
+				width: 5em;		
 		
 			}
 
+			ul.major-icons li:hover .skills-icon {
+				transform: scale(1.2); /* Increase size on hover (adjust the scale factor as needed) */
+			  }
 		
 			
 /* Table */
