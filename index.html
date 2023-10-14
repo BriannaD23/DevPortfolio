@@ -15,7 +15,7 @@
 					<img src="./images/laptop.png">
 					<h1> Greetings, I'm <strong> Brianna</strong><br/></h1>
 					<div class="type-write">
-						<h3>I am a <span class="auto-type"> Front-End Developer </span></h3>
+						<h3>I am a <span class="auto-type">Front-End Developer </span></h3>
 					</div>
 					<p> Passionate about coding, <br /> I turn creative ideas into engaging digital experiences</p>
 					<ul class="actions special">
@@ -144,25 +144,23 @@
 
 			<script>
 				document.addEventListener('DOMContentLoaded', function() {
-				console.log('Typed.js initialization script executed');
-				const typed = new Typed('.auto-type', {
-					strings: ['Creative', 'UX-UI Designer'],
-					typeSpeed: 150,
-					backSpeed: 150,
-					backDelay: 2000,
-					loop: true
+					setTimeout(function() {
+						const typed = new Typed('.auto-type', {
+						strings: ['Creative', 'UX-UI Designer', 'Creative', 'Problem-Solver'],
+						typeSpeed: 150,
+						backSpeed: 150,
+						loop: true,
+					 });
+					}, 3000); // 2000 milliseconds (2 seconds) delay
 				});
-			});
-
-
 			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
