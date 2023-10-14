@@ -18,8 +18,10 @@
 			<section id="header">
 				<div class="inner">
 					<img src="./images/laptop.png">
-					<h1> Greetings, I'm <strong> Brianna</strong><br />
-					 I am a Front-End Developer</h1>
+					<h1> Greetings, I'm <strong> Brianna</strong><br/></h1>
+					<div class="type-write">
+						<h3>I am a <span class="auto-type"> Front-End Developer </span></h3>
+					</div>
 					<p> Passionate about coding, <br /> I turn creative ideas into engaging digital experiences</p>
 					<ul class="actions special">
 						<li><a href="#one" class="button scrolly">Discover</a></li>
@@ -54,12 +56,12 @@
 								<h2> Skills</h2>
 							</header>
 							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-react"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-								<li><span class="icon solid style4 major fa-cog"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-calendar"></span></li>
+									<li><img class = "skills-icon " src= "./images/html-5.png "></li>
+									<li><img class = "skills-icon" src= "./images/css-logo.png" ></li>
+									<li><img class = "skills-icon" src= "./images/javascriptlogo.png"></li>
+									<li><img class = "skills-icon" src = "./images/github-logo.png"></li>
+									<li><img class = "skills-icon" src = "./images/giticon.png"></span></li>
+									<li><img class = "skills-icon" src = "./images/physics.png" ></li>
 							</ul>
 						</div>
 					</div>
@@ -114,7 +116,7 @@
 						<li><a href="https://www.facebook.com/brianna.duncan.77964" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.linkedin.com/in/brianna-duncan-3b4b10227/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
 						<li><a href="https://github.com/BriannaD23" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="briannadarladuncan@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto: briannadarladuncan@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 
 					<ul class="actions">
@@ -139,11 +141,23 @@
 			</section>
 
 		<!-- Footer -->
-			<section id="footer">
+			<section class ="footer">
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Brianna Duncan 2023</li>
 				</ul>
 			</section>
+
+			<script>
+				$(document).ready(function() {
+					let options = {
+						strings: ["hope", "family"],
+						typeSpeed: 40
+					};
+				let typed = new Typed(".auto-type", options);
+				});
+
+
+			</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -152,6 +166,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://kit.fontawesome.com/fc84bd7ef1.js" crossorigin="anonymous"></script>
+			<script type="module"src="assets/js/typed.js"></script>
 	</body>
 </html>
