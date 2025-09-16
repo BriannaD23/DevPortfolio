@@ -2596,8 +2596,11 @@ input, select, textarea {
 
 
 		ul.major-icons li {
-			padding: 2rem;
-			display: inline-block;
+			width: 8em;
+			height: 8em;
+		
+			display: inline-flex;
+			align-items: center;
 			background: white;
 			box-shadow:0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 24px rgba(0, 0, 0, 0.4);
 			margin: 10px;
@@ -2606,12 +2609,10 @@ input, select, textarea {
 
 
 			ul.major-icons li .skills-icon {
-				border-radius: 4px;
-				display: inline-block;
+			
 				height: 5em;
-				line-height: 8em;
-				text-align: center;
-				width: 5em;		
+				width: 5em;
+				object-fit: contain;
 		
 			}
 
